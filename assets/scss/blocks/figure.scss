@@ -1,0 +1,53 @@
+.figure {
+  position: absolute;
+  right: 6rem;
+  bottom: 8rem;
+  z-index: 1;
+
+  width: 455px;
+  height: 455px;
+
+  border-radius: 60% 40% 62% 38% / 55% 34% 66% 45%;
+  animation: circleRadius 9s alternate infinite;
+
+  background: linear-gradient(to bottom, #f5576c, #f093fb);
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, .15);
+
+  @media ($mw: $notebook) {
+    right: 1rem;
+    width: 400px;
+    height: 400px;
+  }
+
+  @media ($mw: $tablet) {
+    width: 350px;
+    height: 350px;
+  }
+
+  @media ($mw: $tablet) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media ($mw: $mobileSmall) {
+    display: none;
+  }
+}
+
+@keyframes circleRadius {
+  0% {
+    border-radius: 60% 40% 62% 38% / 55% 34% 66% 45%;
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    border-radius: 59% 41% 46% 54% / 58% 37% 63% 42%;
+    transform: translate3d(30px, -10px, 0);
+  }
+
+  100% {
+    border-radius: 59% 41% 46% 54% / 58% 37% 63% 42%;
+    transform: translate3d(25px, 20px, 0);
+  }
+}

@@ -1,0 +1,7 @@
+.logo {
+  @include text(1.6rem, 700, $black);
+}
+
+.logo__prefix {
+  color: $pink;
+}

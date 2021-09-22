@@ -1,0 +1,58 @@
+.info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: inherit;
+  
+  &--modal {
+    margin-left: 0.5rem;
+  }
+}
+
+.info__item {
+  display: inline-block;
+  vertical-align: middle;
+
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 5px;
+    height: 1px;
+
+    background-color: $black;
+
+    position: absolute;
+    top: 50%;
+    right: -.5rem;
+    z-index: 1;
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+  
+  & + & {
+    margin-left: 0.5rem;
+  }
+
+  .info--modal & {
+    display: block;
+
+    &:after {
+      display: none;
+    }
+
+    margin-left: 2rem;
+  }
+}
+
+.info__link {
+  @include text(1rem, 500, $black);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

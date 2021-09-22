@@ -1,0 +1,14 @@
+.arrow {
+  width: 20px;
+  height: 35px;
+
+  fill: #707070;
+
+  display: block;
+  margin: auto 0;
+
+  transition: fill .1s linear;
+  &:hover {
+    fill: $pink;
+  }
+}

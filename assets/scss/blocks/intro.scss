@@ -1,0 +1,64 @@
+.intro {
+
+  @media ($mw: $mobileSmall) {
+    text-align: center;
+  }
+}
+
+.intro__text {
+  @include text(1.2rem, 400, $gray_dark);
+}
+
+.intro__title {
+  @include text(3.2rem, 600, $black);
+  line-height: 4rem;
+
+  margin-bottom: 0.5rem;
+
+  @media ($mw: $notebook) {
+    font-size: 2.2rem;
+    line-height: 2rem;
+  }
+
+  @media ($mw: $mobile) {
+    width: 50%;
+    margin: .5rem 0 1rem;
+  }
+
+  @media ($mw: $mobileSmall) {
+    width: auto;
+  }
+}
+
+.intro__subtitle{
+  @include text(1.6rem, 400, $black);
+  display: flex;
+
+  margin-bottom: 3rem;
+
+  &-text {
+    & + & {
+      margin-left: 0.4rem;
+
+      @media ($mw: $tablet) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &-work {
+    color: $pink;
+  }
+
+  @media ($mw: $notebook) {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+
+  @media ($mw: $tablet) {
+    flex-direction: column;
+
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+}

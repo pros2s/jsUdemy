@@ -1,0 +1,65 @@
+@import "vars";
+@import "mixins";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+
+  background-color: $gray;
+  overflow: hidden;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: $black;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+// Bootstrap
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../../node_modules/bootstrap/scss/modal";
+
+// Blocks
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
+@import "blocks/lang";
+@import "blocks/content";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/info";
+@import "blocks/figure";
+@import "blocks/man";
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/modal";
+@import "blocks/cross";
+@import "blocks/form";
+@import "blocks/input";
+@import "blocks/services";
+@import "blocks/portfolio";
+@import "blocks/arrow";
+@import "blocks/helpers";
+@import "blocks/burger";
+
+//Vendors libs
+@import "vendor/slick";
+@import "vendor/col-lg";

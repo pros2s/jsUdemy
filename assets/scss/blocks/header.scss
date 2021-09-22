@@ -1,0 +1,22 @@
+.header {
+  margin-top: 2rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header__inner {
+  padding: .8rem 1.4rem;
+
+  border-radius: $radius;
+  background-color: $white;
+  box-shadow: $shadow;
+
+  @media ($mw: $mobileSmall) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__row{
+  align-items: center;
+}
