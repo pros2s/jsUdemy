@@ -1,22 +1,12 @@
 .header {
-  margin-top: 2rem;
+  display: block;
   width: 100%;
-  overflow: hidden;
-}
 
-.header__inner {
-  padding: .8rem 1.4rem;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fff;
 
-  border-radius: $radius;
-  background-color: $white;
-  box-shadow: $shadow;
-
-  @media ($mw: $mobileSmall) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.header__row{
-  align-items: center;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
